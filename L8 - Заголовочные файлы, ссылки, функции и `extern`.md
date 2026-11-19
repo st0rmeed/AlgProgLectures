@@ -250,7 +250,7 @@ int func(int a, int){ //ok
 
 <h3 style='margin-bottom: 0.5em;'>Вызов функции</h3>
 <div style='margin-bottom: 0.5em;'></div>
-![[Pasted image 20261119161708.png]]
+![[data/Pasted image 20261119161708.png]]
 
 
 
