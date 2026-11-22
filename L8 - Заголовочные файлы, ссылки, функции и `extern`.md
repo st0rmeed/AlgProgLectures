@@ -250,7 +250,7 @@ int func(int a, int){ //ok
 
 <h3 style='margin-bottom: 0.5em;'>Вызов функции</h3>
 <div style='margin-bottom: 0.5em;'></div>
-![[data/Pasted image 20261119161708.png]]
+![[Pasted image 20261119161708.png]]
 
 
 
@@ -296,9 +296,10 @@ change(x, y);
 ```
 
 *Передача по ссылке*
+<div style='margin-bottom:0.5em;'></div>
 ```cpp
-void change (int &a, int&b);{
-	a = 5; b = 7;
+void change (int &a, int&b);{ // фактически говорим функции, что она работает с ссылками; приказываем не создавать копии переменных
+	a = 5; b = 7; // работаем с ссылками как с обычными переменным
 }
 
 int x=2, y=22;
@@ -306,13 +307,14 @@ change(x, y);
 ```
 
 *Передача через указатель*
+<div style='margin-bottom:0.5em;'></div>
 ```cpp
-void change(int *a, int *b){ // принимает адреса переменных
-	*a = 5; *b = 7;
+void change(int *a, int *b){ // ожидаемый тип - указатели на int
+	*a = 5; *b = 7; // разыменовывание переменных
 }
 
 int x=3, y=33;
-change(&x, &y);
+change(&x, &y); // передаем адреса переменных
 ```
 
 
@@ -340,3 +342,4 @@ change(&x, &y);
 [[L6 - Массивы]]
 [[L7 - Сортировки]]
 [[L8 - Заголовочные файлы, ссылки, функции и `extern`]]
+[[L9 - Параметры функций]]
